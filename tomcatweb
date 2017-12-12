@@ -1,2 +1,3 @@
 FROM 		tomcat:9.0
 
+COPY 		/home/dockserver/input/odsiweb/ /usr/local/tomcat/webapps/
