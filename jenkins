@@ -3,9 +3,9 @@ RUN /usr/local/bin/install-plugins.sh docker-slaves github-branch-source:1.8
 
 USER root
 RUN chown -R jenkins:jenkins /var/jenkins_home
-touch /var/jenkins/test1.txt
+RUN touch /var/jenkins/test1.txt
 USER jenkins
-touch /var/jenkins/test2.txt
+RUN touch /var/jenkins/test2.txt
 
 ENV JAVA_OPTS="-Xmx8192m"
 ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300"
