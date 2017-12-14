@@ -10,4 +10,3 @@ touch /var/jenkins/test2.txt
 ENV JAVA_OPTS="-Xmx8192m"
 ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300"
 
-docker run -p 8081:8080 -p 50000:50000 -v /var/dockserver/stacks/jenkins/jenkins_home:/var/jenkins_home jenkins
