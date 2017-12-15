@@ -2,3 +2,4 @@ FROM 		openjdk:9
 WORKDIR /usr/src/leshan
 RUN ls -la /usr/src/leshan/
 RUN java -jar /usr/src/leshan/leshan-server.jar -slp 5684
+
