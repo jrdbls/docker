@@ -1,0 +1,4 @@
+FROM 		openjdk:9
+WORKDIR /usr/src/leshan
+RUN java -jar leshan-server.jar -slp 5684
+CMD ["java", "Main"]
