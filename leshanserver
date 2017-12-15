@@ -1,6 +1,4 @@
 FROM 		openjdk:9
 WORKDIR /usr/src/leshan
-RUN pwd
-RUN ls -la /usr/src/leshan
-RUN cd /usr/src/leshan
-RUN java -jar leshan-server.jar -slp 5684
+RUN java -jar /usr/src/leshan/leshan-server.jar -slp 5684
+
