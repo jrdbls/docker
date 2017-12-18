@@ -1,7 +1,4 @@
 FROM 		openjdk:9
-
-COPY /home/dockserver/stacks/leshan/code /usr/src/leshan
-
+COPY /home/dockserver/stacks/leshan/compose/code /usr/src/leshan
 WORKDIR /usr/src/leshan
-
 RUN java -jar leshan-server.jar -slp 5684
