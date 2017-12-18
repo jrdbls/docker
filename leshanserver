@@ -1,4 +1,3 @@
 FROM            openjdk:9
-COPY ./code /usr/src/leshan
 WORKDIR /usr/src/leshan
 CMD java -jar leshan-server.jar -slp 5684
