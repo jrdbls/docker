@@ -1,5 +1,4 @@
-FROM 		openjdk:9
-COPY /home/dockserver/stacks/leshan/compose/code /usr/src/leshan
+FROM            openjdk:8
+COPY ./code /usr/src/leshan
 WORKDIR /usr/src/leshan
-RUN java -jar leshan-server.jar -slp 5684
-CMD ["java", "Main"]
+CMD java -jar leshan-server.jar -slp 5684
