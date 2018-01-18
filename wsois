@@ -1,3 +1,1 @@
 FROM 		wso2/wso2base:latest
-
-EXPOSE 9443 9763
