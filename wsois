@@ -8,5 +8,3 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/
 ENV PATH ${JAVA_HOME}/bin:${PATH}
 ENV CARBON_HOME /opt/wso2is
 
-CMD ["mkdir", "/tmp/jordi"]
-
