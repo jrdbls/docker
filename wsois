@@ -9,3 +9,5 @@ ENV PATH ${JAVA_HOME}/bin:${PATH}
 ENV CARBON_HOME /opt/wso2is
 
 CMD /opt/wso2is/bin/wso2server.sh
+
+EXPOSE 9443 9763
