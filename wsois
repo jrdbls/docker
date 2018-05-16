@@ -1,13 +1,9 @@
-FROM 		wso2/wso2base:latest
+FROM 		openjdk:8-jre
 RUN apt-get update && \
     apt-get upgrade -y  && \
-    apt-get install default-jdk -y && \
+    apt-get install default-jdk procps net-tools wget puppet iproute2 zip unzip net-tools -y && \
     apt-get clean 
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/
 ENV PATH ${JAVA_HOME}/bin:${PATH}
 ENV CARBON_HOME /opt/wso2is
-
-EXPOSE 9443 9763
-
-CMD /opt/wso2is/bin/wso2server.sh
