@@ -3,7 +3,7 @@ RUN apt-get update && \
     apt-get upgrade -y  && \
     apt-get install default-jdk procps net-tools wget puppet iproute2 zip unzip net-tools -y && \
     apt-get clean 
-ADD wso2is.zip /opt/
+ADD /home/dockserver/stacks/wis/compose/wso2is.zip /opt/
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/
 ENV PATH ${JAVA_HOME}/bin:${PATH}
 ENV CARBON_HOME /opt/wso2is
